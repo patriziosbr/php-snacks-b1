@@ -24,8 +24,19 @@ Olimpia Milano - Cantù | 55-60 -->
         ],
     ];
 
+    for ($i=0; $i < count($calendario) ; $i++) {
+        
+        $partita =  $calendario[$i]["casa"] . " - " . $calendario[$i]["ospite"] . " | ";
+        $punteggio = $calendario[$i]["puntiCasa"] . "-" . $calendario[$i]["puntiOspite"];
+        echo $partita . $punteggio . "<br>";
+        
+    }
+
 ?>
-<!DOCTYPE html>
+
+
+
+<!-- <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -35,18 +46,7 @@ Olimpia Milano - Cantù | 55-60 -->
     </head>
     <body>
         <ul>
-            <li>
-                <?php echo $calendario[0]["casa"] . " - " . $calendario[0]["ospite"] . " | " . $calendario[0]["puntiCasa"] . "-" . $calendario[0]["puntiOspite"];
-                ?>
-            </li>
-            <li>
-                <?php echo $calendario[1]["casa"] . " - " . $calendario[1]["ospite"] . " | " . $calendario[1]["puntiCasa"] . "-" . $calendario[1]["puntiOspite"];
-                ?>
-            </li>
-            <li>
-                <?php echo $calendario[2]["casa"] . " - " . $calendario[2]["ospite"] . " | " . $calendario[2]["puntiCasa"] . "-" . $calendario[2]["puntiOspite"];
-                ?>
-            </li>
+
         </ul>
     </body>
-</html>
+</html> -->
