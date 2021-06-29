@@ -14,3 +14,16 @@
 
 ?>
 
+<!-- soluzione 2  -->
+
+<?php 
+    $numbers = [];
+
+    while(count($numbers)) {
+        $newNumb = rand(1, 100);
+        
+        if(!in_array($newNumb, $numbers)){
+            $numbers[] = $newNumb;
+        }
+    }
+?>
